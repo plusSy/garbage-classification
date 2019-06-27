@@ -1,9 +1,5 @@
-//index.js
-//获取应用实例
 
 import * as GarbgeData from '../../assets/data/index.js'
-
-console.log(GarbgeData)
 
 Page({
   data: {
@@ -18,6 +14,11 @@ Page({
     injectData: {},
     logoImg: '/assets/image/wet.png',
     showToolTip: false
+  },
+  onShow: function () {
+    this.setData({
+      detailList: GarbgeData.default['wet']
+    })
   },
   menuClick (e) {
     this.data.detailList = [];
