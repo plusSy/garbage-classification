@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="category-menu">
+    <block wx:for="{{menus}}" wx:for-index="idx" wx:key="{{item}}">
+      <text class="category-item {{_num === item.type ? item.type+ '-click' : item.type}}" data-num="{{item.type}}"  bindtap="menuClick">{{ item.name }}</text>
+    </block>
+  </view>
+  <view class="category-detail">
+    <view class="category-container">
+      <view class="detail-logo">
+        <image style="width: 100px; height: 100px;" src="{{logoImg}}"></image>
+      </view>
+      <block wx:for="{{detailList}}" wx:for-index="idx" wx:key="idx" wx:for-item="cell">
+        <text class="detail-cell" data-item="{{cell}}" bindtap="detailClick">{{ cell.name }}</text>
+      </block>
+    </view>
+  </view>
+</view>
+<tooltip injectObj="{{injectData}}" wx:if="{{showToolTip}}" bind:closeModal="handleClose"></tooltip>

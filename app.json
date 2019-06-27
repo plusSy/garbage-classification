@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/category/category",
+    "pages/test/test",
+    "pages/components/common/tooltip/tooltip"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#89bdf7",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/image/category.png",
+        "selectedIconPath": "assets/image/category.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "assets/image/test.png",
+        "selectedIconPath": "assets/image/test.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

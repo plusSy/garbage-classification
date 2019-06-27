@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tooltip": "/components/common/tooltip/tooltip"
+  }
+}

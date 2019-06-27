@@ -1,0 +1,10 @@
+<view class="tooltip" bindtap="handleClose">
+  <view class="tooltip-container {{injectObj.type + '-bg'}}">
+    <view class="con-header">{{ injectObj.name }}</view>
+    <view class="con-form">属于</view>
+    <view class="con-garbgeType">
+      <image style='width: 80px; height: 80px;' src="{{assetsBase + injectObj.type + '.png'}}"></image>
+    </view>
+  </view>
+</view>
+<slot></slot>
